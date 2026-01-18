@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b5d5f68d91.js" crossorigin="anonymous"></script>
+    <title>Startsida - Lego Interior Design</title>
+</head>
+
+<body>
+    <header>
+        <div class="verticalCenter">
+            <div class="topnav">
+                <picture class="headerLogo">
+                    <source media="(min-width: 900px)" srcset="images/logotype_full_white.svg" width="1100" height="85"
+                        type="image/svg+xml">
+                    <source media="(max-width: 899px)" srcset="images/logotype_small_white.svg" width="150" height="100"
+                        type="image/svg+xml">
+                    <img class="logotype" src="images/logotype_small_white.svg" alt="Lego Interior Design" width="1100"
+                        height="85">
+                </picture>
+                <a href="javascript:void(0);" class="icon-menu">
+                    <img id="hamburgerMenu" src="images/mobile_hamburger_menu.svg" alt="öppna navigeringsmeny">
+                </a>
+            </div>
+        </div>
+        <picture class="heroImage">
+            <source media="(min-width: 1200px)" srcset="images/header_desktop.webp" width="2500" height="918"
+                type="image/webp">
+            <source media="(max-width: 1199px) and (min-width: 899px)" srcset="images/header_tablet.webp" width="500"
+                height="281" type="image/webp">
+            <source media="(max-width: 599px)" srcset="images/header_mobile.webp" width="600" height="432"
+                type="image/webp">
+            <img class="hero" src="images/header.jpg" alt="" width="2500" height="918">
+        </picture>
+    </header>
+    <div class="fullBackground">
+        <div class="mainNav">
+            <nav>
+                <ul>
+                    <li><a class="currentPage" href="index.html">Startsida</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om företaget</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="cart.html">Varukorg <img id="shoppingCart" src="images/shoppingcart.svg" alt="Varukorg"></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h1>Färdigbyggt lego som inredning</h1>
+            <p>Produkter för dig som älskar lego men får ont i fingrarna av att bygga det.
+                Hos oss kan du hitta härliga färdigbyggda alster som du direkt kan använda som inredning hemma. Slipp
+                nariga fingrar, trasiga naglar och huvudvärken av att följa instruktioner.
+
+            </p>
+            <h2>Våra produkter</h2>
+            <p>Alla våra alster är original-lego som vi bygger ihop själva. Allt för att du ska slippa. Vi bygger alltid
+                med stor omsorg och paketerar dem mycket noggrant för att de alltid ska komma fram hela till dig.</p>
+        </section>
+        <aside>
+            <section>
+                <h3>Nyaste bygget</h3>
+                <p>Äntligen färdigbyggd och klar att klicka hem</p>
+                <picture>
+                    <source srcset="images/image_news.webp" width="300" height="225" type="image/webp">
+                    <img class="" src="images/image_news.jpg" alt="" width="300" height="225">
+                </picture>
+            </section>
+            <section>
+                <h3>Webshop</h3>
+                <p>
+                    Kika in på våran <a href="products.html">webshop</a> för att se vad för alster som skulle passa i
+                    ditt hem.
+                </p>
+            </section>
+        </aside>
+    </main>
+    <div class="fullBackground">
+        <footer>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om företaget</a></li>
+                </ul>
+                <p class="copyright">&copy; Lego Interior Design</p>
+            </div>
+            <div class="socialmedia">
+                <p class="socialmediaText">Följ oss på sociala medier</p>
+                <div class="socialmediaLinks">
+                    <ul>
+                        <li><a href="www.instagram.com" title="Instagram"><span
+                                    class="fa-brands fa-instagram"></span></a>
+                        </li>
+                        <li><a href="www.facebook.com" title="Facebook"><span
+                                    class="fa-brands fa-square-facebook"></span></a>
+                        </li>
+                        <li><a href="www.linkedin.com" title="Linkedin"><span
+                                    class="fa-brands fa-square-linkedin"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--Function for hamburgermenu mobile-->
+    <script>
+        document.querySelector("#hamburgerMenu").addEventListener("click", myFunction);
+
+        function myFunction() {
+            var x = document.querySelector(".mainNav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

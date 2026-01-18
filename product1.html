@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/b5d5f68d91.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css">
+    <title>Produkter - Lego Interior Design</title>
+</head>
+
+<body>
+    <header>
+        <div class="verticalCenter">
+            <div class="topnav">
+                <picture class="headerLogo">
+                    <source media="(min-width: 900px)" srcset="images/logotype_full_white.svg" width="1100" height="85"
+                        type="image/svg+xml">
+                    <source media="(max-width: 899px)" srcset="images/logotype_small_white.svg" width="150" height="100"
+                        type="image/svg+xml">
+                    <img class="logotype" src="images/logotype_small_white.svg" alt="Lego Interior Design" width="1100"
+                        height="85">
+                </picture>
+                <a href="javascript:void(0);" class="icon-menu">
+                    <img id="hamburgerMenu" src="images/mobile_hamburger_menu.svg" alt="öppna navigeringsmeny">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="fullBackground">
+        <div class="mainNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a class="currentPage" href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om företaget</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="cart.html">Varukorg <img id="shoppingCart" src="images/shoppingcart.svg" alt="Varukorg"></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="gridSectionTwo">
+            <article class="uniqueProduct">
+                <h1>Produktnamn</h1>
+                <h2>Artikelnummer</h2>
+                <span class="productPrice">495:-</span>
+                <div class="cartButton">
+                    <a href="cart.html">LÄGG I VARUKORG</a>
+                </div>
+                <p class="productDescription">
+                    En lite längre beskrivning av produkten ska stå här. Den bör bli ca 3 - 4 meningar lång. En lite
+                    längre beskrivning av produkten ska stå här. Den bör bli ca 3 - 4 meningar lång.
+                </p>
+                <p class="mesurement"> Mått: 30 x 30 cm</p>
+        </section>
+        <div class="productImages gridSectionOne">
+            <a href="images\product1\product1_lightbox.jpg" target="_blank" data-lightbox="product1-images">
+                <picture>
+                    <source srcset="images\product1\product1_main.webp" width="450" height="338" type="image/webp">
+                    <img src="images\product1\product1_main.jpg" alt="gul och blå legokruka med grön växt" width="450"
+                        height="338">
+                </picture>
+            </a>
+            <div class="thumbnailsProduct">
+                <a href="images\product1\product1_2lightbox.jpg" target="_blank" data-lightbox="product1-images">
+                    <picture>
+                        <source srcset="images\product1\product1_2mainsmall.webp" width="150" height="113"
+                            type="image/webp">
+                        <img src="images\product1\product1_2mainsmall.jpg" alt="gul och blå legokruka med grön växt"
+                            width="150" height="113">
+                    </picture>
+                </a>
+                <a href="images\product1\product1_3lightbox.jpg" target="_blank" data-lightbox="product1-images">
+                    <picture>
+                        <source srcset="images\product1\product1_3mainsmall.webp" width="150" height="113"
+                            type="image/webp">
+                        <img src="images\product1\product1_3mainsmall.jpg" alt="gul och blå legokruka med grön växt"
+                            width="150" height="113">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        </article>
+        <div class="video">
+
+        </div>
+    </main>
+    <div class="fullBackground">
+        <footer>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om företaget</a></li>
+                </ul>
+                <p class="copyright">&copy; Lego Interior Design</p>
+            </div>
+            <div class="socialmedia">
+                <p class="socialmediaText">Följ oss på sociala medier</p>
+                <div class="socialmediaLinks">
+                    <ul>
+                        <li><a href="www.instagram.com" title="Instagram"><span
+                                    class="fa-brands fa-instagram"></span></a>
+                        </li>
+                        <li><a href="www.facebook.com" title="Facebook"><span
+                                    class="fa-brands fa-square-facebook"></span></a>
+                        </li>
+                        <li><a href="www.linkedin.com" title="Linkedin"><span
+                                    class="fa-brands fa-square-linkedin"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--Function for hamburgermenu mobile-->
+    <script>
+        document.querySelector("#hamburgerMenu").addEventListener("click", myFunction);
+
+        function myFunction() {
+            var x = document.querySelector(".mainNav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
