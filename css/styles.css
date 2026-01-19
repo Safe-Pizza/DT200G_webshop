@@ -449,6 +449,11 @@ section.checkoutSummary .cartButton {
 }
 
 /*settings product page*/
+.productImages img {
+    width: 100%;
+    height: auto;
+}
+
 .productImages {
     padding-top: 50px;
     justify-self: center;
@@ -460,6 +465,7 @@ section.checkoutSummary .cartButton {
     display: flex;
     justify-content: space-around;
     padding-top: 15px;
+    gap: 10px;
 }
 
 .uniqueProduct {
