@@ -94,6 +94,9 @@
                 <source src="media/Video_webshop.mp4" type="video/mp4">
                 " Din webbläsare stödjer inte video-formatet. "
             </video>
+            <div class="videoControl">
+                <button id="videoButton">Pausa video</button>
+            </div>
         </div>
     </main>
     <div class="fullBackground">
@@ -127,13 +130,26 @@
     <!--Function for hamburgermenu mobile-->
     <script>
         document.querySelector("#hamburgerMenu").addEventListener("click", myFunction);
-
+        document.querySelector("#videoButton").addEventListener("click", videoPausPlay);
         function myFunction() {
             var x = document.querySelector(".mainNav");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
                 x.style.display = "block";
+            }
+        }
+
+        function videoPausPlay() {
+            let video = document.querySelector("#backgroundvideo");
+            let buttonEl = document.querySelector("#videoButton");
+
+            if (video.paused) {
+                video.play();
+                buttonEl.innerHTML = "Pausa video";
+            } else {
+                video.pause();
+                buttonEl.innerHTML = "Starta video"
             }
         }
     </script>

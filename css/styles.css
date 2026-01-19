@@ -539,6 +539,15 @@ video {
     margin-bottom: 40px;
 }
 
+#videoButton {
+    background-color: #161F31;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 899px) and (min-width: 600px) {
     #hamburgerMenu {
         display: block;
