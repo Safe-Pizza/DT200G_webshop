@@ -576,7 +576,7 @@ video {
         justify-content: space-between;
     }
 
-    a.icon-menu {
+    .icon-menu {
         width: 80px;
         height: 80px;
         padding-right: 15px;
@@ -712,7 +712,7 @@ video {
         justify-content: space-between;
     }
 
-    a.icon-menu {
+    .icon-menu {
         width: 60px;
         height: 60px;
         padding-right: 10px;
