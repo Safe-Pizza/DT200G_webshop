@@ -285,7 +285,7 @@ footer {
     color: #D4654E;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
 }
 
 /*Footer navigation*/
@@ -461,6 +461,12 @@ section.checkoutSummary h2 {
 
 section.checkoutSummary .cartButton {
     justify-self: center;
+}
+
+/*center button in firefox*/
+.containerCartButton {
+    display: flex;
+    justify-content: center;
 }
 
 /*settings product page*/
