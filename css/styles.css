@@ -83,6 +83,15 @@ p {
         "wdth" 100;
 }
 
+.uniqueProduct h1 {
+    text-transform: uppercase;
+}
+
+.uniqueProduct h2 {
+    font-size: 1.25em;
+    padding-top: 0px;
+}
+
 .cartCheckout h2 {
     font-size: 1.625em;
     font-family: "Poppins", sans-serif;
