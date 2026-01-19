@@ -393,6 +393,11 @@ ul.categories li {
     padding-top: 10px;
 }
 
+.cartDetails img {
+    width: 80%;
+    height: auto;
+}
+
 .cartCheckout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -487,7 +492,7 @@ section.checkoutSummary .cartButton {
 
 .cartButton {
     background-color: #C84B31;
-    width: 404px;
+    width: 350px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -572,7 +577,7 @@ section.checkoutSummary .cartButton {
     /*main grid settings*/
     main {
         grid-template-columns: 1fr;
-        margin-bottom: 70px;
+        margin-bottom: 80px;
     }
 
     main.productsGrid {
@@ -626,6 +631,12 @@ section.checkoutSummary .cartButton {
         text-align: center;
         margin-bottom: 20px;
         padding: 10px 15px 10px 15px;
+    }
+
+    /*cart page*/
+    .checkoutSummary {
+        width: 60%;
+        justify-self: center;
     }
 
 
@@ -697,7 +708,7 @@ section.checkoutSummary .cartButton {
     /*main grid settings*/
     main {
         grid-template-columns: 1fr;
-        margin-bottom: 40px;
+        margin-bottom: 150px;
     }
 
     main.productsGrid {
@@ -767,8 +778,12 @@ section.checkoutSummary .cartButton {
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.3em;
         padding-left: 10px;
+    }
+
+    .productOverview span.productPrice {
+        font-size: 2em;
     }
 
     section.checkoutSummary {
@@ -785,7 +800,7 @@ section.checkoutSummary .cartButton {
 
     /*cart page*/
     .cartButton {
-        width: 300px;
+        width: 280px;
         height: 50px;
     }
 
@@ -794,24 +809,27 @@ section.checkoutSummary .cartButton {
     }
 
     .orderValue {
-        justify-content: flex-start;
+        justify-content: space-between;
+        font-size: 0.8em;
     }
 
     .shippingValue {
-        justify-content: flex-start;
+        justify-content: space-between;
+        font-size: 0.8em;
     }
 
     .totalValue {
-        justify-content: flex-start;
+        justify-content: space-between;
+        font-size: 1.1em;
     }
 
     .taxValue {
-        justify-content: flex-start;
+        justify-content: space-between;
+        font-size: 0.8em;
     }
 
     footer {
-        font-size: 60%;
-        margin-top: 40px;
+        font-size: 50%;
     }
 
 }
